@@ -13,7 +13,6 @@ title: 我的Blog
 	<li>
 		{{ post.date | date_to_xmlschema }} 
 		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-		{{ post.excerpt }}
 	</li>
 
 　　{% endfor %}
