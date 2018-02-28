@@ -1,20 +1,12 @@
 ---
 layout: default
-title: 我的Blog
+title: xiong cong
 ---
 
-<h2>{{ page.title }}</h2>
-
-<p>最新文章</p>
-
-<ul>
-
-　　{% for post in site.posts %}
-	<li>
-		{{ post.date | date_to_xmlschema }} 
-		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	</li>
-
-　　{% endfor %}
-
-</ul>
+<div id="home">
+	<h1>Blog Posts</h1>
+	<ul class="posts">
+		{% for post in site.posts %}
+		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{post.url }}">{{ post.title }}</a></li>
+	</ul>
+</div>
