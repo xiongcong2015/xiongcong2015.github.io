@@ -22,6 +22,21 @@ restarting in TCP mode port: 5555
 C:\Users\bryan>adb connect 172.26.226.183
 connected to 172.26.226.183:5555
 
+
+C:\Users\bryan>adb devices
+List of devices attached
+172.26.226.183:5555     device
+
+
+C:\Users\bryan>
+```
+现在就可以拔掉USB线了
+```
+C:\Users\bryan>adb devices
+List of devices attached
+172.26.226.183:5555     device
+
+
 C:\Users\bryan>adb shell
 hero2qltechn:/ $ ls
 acct               init.msm.usb.configfs.rc   persist
@@ -47,4 +62,14 @@ init.container.rc  mnt                        vendor
 init.environ.rc    oem                        verity_key
 init.mdm.sh        persdata
 hero2qltechn:/ $
+```
+接下来就可以各种命令了
+```
+adb pull
+adb push
+adb install
+adb uninstall
+adb connect
+adb disconnect
+...
 ```
