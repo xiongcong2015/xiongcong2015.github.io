@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 baseurl: /xiongcong2015.github.io
-markdown: redcarpet
+markdown: kramdown
 
 kramdown:
   input: GFM
