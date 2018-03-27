@@ -9,6 +9,7 @@ title: linux command
 
 ```shell
 cat /proc/version
+lsb_release -a
 ```
 
 ## 查看 Linux 内核版本信息
